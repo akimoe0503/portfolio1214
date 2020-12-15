@@ -4,6 +4,11 @@ html {
   margin: 0 auto;
 }
 
+header {
+    width: 100%;
+    position: fixed;
+}
+
 header ul{
     height: 70px;
     background-color: #ffffff;
@@ -27,11 +32,22 @@ header li{
     padding: 5% 0;
 }
 
-.area h2 {
+h2 {
     font-family: 'Impact';
     font-size: 55px;
     text-align: center;
     margin-top: 50px;
+}
+
+.cp_h2title{
+	position: relative;
+	padding: .3em;
+}
+.cp_h2title:after {
+	content: "";
+	display: block;
+	height: 4px;
+	background: linear-gradient(to right, rgb(79, 87, 87), transparent);
 }
 
 .area p {
@@ -65,26 +81,64 @@ header li{
 }
 
 /* about me */
-.main-photo{
+.main-photo {
     display: flex;
     justify-content: space-between;
 }
 
-.main-photo img{
+.main-photo img {
     width: 300px;
     height: 450px;
     margin-left: 50px;
 }
 
-.main-photo p{
+.main-photo p {
     font-size: 20px;
 
 }
 
+.profile {
+    margin-left: 30px;
+}
 
-/* slider */
+h3 {
+    font-size: 20px;
+}
+
+.intro {
+    margin-left: 50px;
+    margin-top: 40px;
+}
+
+
+/* (work) slider */
 
 
 
 
 /* footer */
+.footer-pic {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.footer-pic img{
+    width: 90px;
+    height: 120px;
+}
+
+/* sns ボタン */
+
+.my-red{
+    color: rgba(202, 43, 194, 0.829);
+}
+
+.my-skyblue{
+    color: #1da1f2;
+}
+
+.my-blue{
+    color: #3b5998;
+}
