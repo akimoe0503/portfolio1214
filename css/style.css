@@ -1,6 +1,90 @@
-body {
-    width: 1280px;
+body,
+html {
+  height: 100%;
+  margin: 0 auto;
 }
+
 header ul{
-    background-color: antiquewhite;    
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
 }
+
+header li{
+    display:inline; 
+    padding:30px 10px;
+    margin-right: 20px;
+}
+
+/* パララックス  */
+/*--コンテンツ設定--*/
+.area {
+    background-color: #ffffff;
+    overflow: hidden;
+    width: 100%;
+    height: 180px;
+    padding: 5% 0;
+}
+
+.area h2 {
+    font-family: 'Impact';
+    font-size: 55px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.area p {
+    text-align: center;
+    font-size: 14px;
+}
+
+/*--固定背景の設定--*/
+.cd-fixed-bg {
+    position: relative;
+    min-height: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+    z-index: 2;
+}
+
+/*--固定背景01--*/
+.cd-fixed-bg.cd-bg-1  {
+  background-image: url("../img/top.jpg");
+}
+
+.cd-fixed-bg p{
+    text-align: center;
+    padding: 20%;
+    opacity: 0.6;
+    font-size: 50px;
+    color: #ffffff;
+    font-family: 'Italianno', cursive;
+}
+
+/* about me */
+.main-photo{
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-photo img{
+    width: 300px;
+    height: 450px;
+    margin-left: 50px;
+}
+
+.main-photo p{
+    font-size: 20px;
+
+}
+
+
+/* slider */
+
+
+
+
+/* footer */
