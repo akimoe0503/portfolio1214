@@ -13,31 +13,36 @@
     <title>My profile</title>
 </head>
 
+    <link rel="stylesheet" type="text/css" href="js/main.css">
+
 <body>
-    <!-- header -->
-    <header>
-        <ul>
-            <li><a href=""></a>Home</li>
-            <li><a href=""></a>About</li>
-            <li><a href=""></a>Work</li>
-        </ul>
+    <!-- heder 　ここから -->
+    <header class="site-header">
+        <nav class="gnav">
+            <ul class="gnav__menu">
+                <li class="gnav__menu__item"><a href="#top">Home</a></li>
+                <li class="gnav__menu__item"><a href="#main">About</a></li>
+                <li class="gnav__menu__item"><a href="#works">Works</a></li>
+            </ul>
+        </nav>
     </header>
 
     <!--固定背景01-->
-    <div class="cd-fixed-bg cd-bg-1">
+    <div id="top" class="cd-fixed-bg cd-bg-1">
         <p>Love the life you live,<br>
             Live the life you love...</p>
     </div>
 
     <!--コンテンツ-->
-    <div class="area">
-        <div class="contents-pic">
-            <img src="img/footer.JPG" alt="イラスト">
-            <h2 class="cp_h2title">Moe Akimoto</h2>
+    <div id="main" class="area">
+        <div class="contents">
+            <h2 class="cp_h2title">About me</h2>
         </div>
     </div>
 
-    <!-- About me -->
+    <!-- heder 　ここまで -->
+
+    <!-- About me　ここから -->
     <main>
         <section>
             <div class="main-photo">
@@ -46,9 +51,9 @@
                     <div class="profile">
                         <h3>profile</h3>
                         <p> Name：秋元 萌（あきもと もえ）<br>
-                            Nickname：もえぴ もえに あきもっちゃん<br>
+                            Nickname：もえぴ / もえに / あきもっちゃん<br>
                             Hometown：山形県<br>
-                            Hobby：旅行 美味しいグルメ探し K-pop 韓ドラ
+                            Hobby：旅行 / 美味しいグルメ探し / K-pop / 韓ドラ
                         </p>
                     </div>
                     <div class="intro">
@@ -62,29 +67,32 @@
             </div>
         </section>
 
-        <!-- work -->
-        <section>
+    <!-- About me　ここまで -->
+
+    <!-- work ここから-->
+        <section id="works">
             <h2 class="cp_h2title">Works</h2>
 
         </section>
     </main>
 
+    <!-- work ここまで-->
 
-    <!-- footer -->
+    <!-- footer ここから-->
     <footer>
         <div class="footer-pic">
             <img src="img/footer.JPG" alt="イラスト">
         </div>
         <div class="sns-button">
-            <i class="fab fa-instagram-square fa-2x my-red"></i>
+            <a href="https://www.instagram.com/moeni____/?hl=ja"><i class="fab fa-instagram-square fa-2x my-red"></i></a>
             <i class="fab fa-twitter-square fa-2x my-skyblue"></i>
             <i class="fab fa-facebook-square fa-2x my-blue"></i>
         </div>
         <div class="second-footer">
-            <p>Copyright © 2020, Thank your reading by moeni</p>
-
+            <p>Copyright © 2020, Thanks for reading by moeni</p>
         </div>
     </footer>
+    <!-- footer ここまで-->
 
 </body>
 

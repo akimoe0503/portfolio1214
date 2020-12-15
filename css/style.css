@@ -4,22 +4,50 @@ html {
   margin: 0 auto;
 }
 
-header {
-    width: 100%;
-    position: fixed;
-}
-
-header ul{
-    height: 100px;
-    background-color: #ffffff;
+.site-header{
+    background: #fff;
     display: flex;
-    justify-content: flex-end;
+    position: fixed;
+    justify-content: space-between;
+    width: 100%;
+    height: ;
 }
 
-header li{
-    display:inline; 
-    padding:30px 10px;
-    margin-right: 20px;
+.gnav__menu{
+    display: flex;
+}
+
+.gnav__menu__item{
+    margin-left: 20px;
+}
+
+.gnav__menu__item a{
+    color: #333;
+    text-decoration: none;
+}
+
+.content{
+    line-height: 1.6;
+    margin: 0 auto;
+    padding-top: 100px;
+    width: 800px;
+}
+.content p{
+    margin-bottom: 40px;
+}
+
+.site-header{
+    background: rgba(255,255,255,0.5);
+    display: flex;
+    padding: 60px 20px;
+    position: fixed;
+    justify-content: space-between;
+    transition: .5s;
+    width: 100%;
+}
+.site-header.transform{
+    background: rgba(255,255,255,0.9);
+    padding: 20px;
 }
 
 /* パララックス  */
@@ -30,15 +58,6 @@ header li{
     width: 100%;
     height: 180px;
     padding: 5% 0;
-}
-
-.contents-pic {
-    text-align: center;
-}
-
-.contents-pic img{
-    width: 90px;
-    height: 120px;
 }
 
 h2 {
@@ -150,4 +169,11 @@ h3 {
 
 .my-blue{
     color: #3b5998;
+}
+
+.second-footer p{
+    background-color:rgba(204, 204, 204, 0.918);
+    height: 30px;
+    margin-top: 8px;
+    text-align: center;
 }
