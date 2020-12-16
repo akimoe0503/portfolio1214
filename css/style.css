@@ -111,40 +111,128 @@ h2 {
 /* about me */
 .main-photo {
     display: flex;
-    justify-content: space-between;
+    overflow: hidden;
 }
 
 .main-photo img {
     width: 300px;
     height: 450px;
-    margin-left: 50px;
+    margin-left: 90px;
+    transform: scale(1.1);
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition-duration: 0.5s;
 }
 
-.main-photo p {
+.main-photo img:hover{
+    filter: grayscale(0);
+    transition-duration: 0.5s;
+  }
+
+.main-pro {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-pro p {
     font-size: 20px;
 
 }
 
 .profile {
-    margin-left: 30px;
+    /* margin-left: 30px; */
 }
 
 h3 {
-    font-size: 20px;
+    font-size: 40px;
+    margin-bottom: 30px;
 }
 
 .intro {
-    margin-left: 50px;
-    margin-top: 40px;
+    /* margin-left: 150px;
+    margin-top: 60px; */
 }
 
 
-/* (work) slider */
+/* work */
+.works-list {
+    margin-top: 100px;
+	display: flex;
+	justify-content: space-between;
+    text-align: center;
+}
+
+.works-list li{
+    display: flex;
+    flex-direction: column;
+}
+
+.works-list button {
+    width: 70px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: 130px;
+    opacity: 0.8;
+}
 
 
+.works-list li img {
+    width: 330px;
+    height: 250px;
+    margin-bottom: 30px;
+}
+/* 
+#works ul li a:hover {
+    opacity: 0.8;
+  }
+
+#works ul li a img {
+    width: 200px;
+  }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+  }
+
+.bigimg {
+    position: absolute;
+    width: 80%;
+    max-width: 800px;
+    top: 80px;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+.close-btn {
+    color: #fff;
+    font-size: 40px;
+    position: absolute;
+    right: 20px;
+    top: 0;
+  }
+
+.close-btn a {
+    color: #fff;
+    text-decoration: none;
+  } */
 
 
 /* footer */
+
+footer {
+    margin-top: 100px;
+    border-top : 3px double #000000;
+}
+
 .footer-pic {
     height: 100px;
     display: flex;
@@ -153,11 +241,22 @@ h3 {
 }
 
 .footer-pic img{
-    width: 90px;
-    height: 120px;
+    width: 110px;
+    height: 150px;
 }
 
 /* sns ボタン */
+
+.sns-button{
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    text-decoration: underline;
+}
+
+.sns-button i{
+    margin: 8px;
+}
 
 .my-red{
     color: rgba(202, 43, 194, 0.829);
@@ -172,7 +271,7 @@ h3 {
 }
 
 .second-footer p{
-    background-color:rgba(204, 204, 204, 0.918);
+    font-size: 12px;
     height: 30px;
     margin-top: 8px;
     text-align: center;
