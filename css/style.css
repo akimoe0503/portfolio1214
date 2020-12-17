@@ -2,7 +2,6 @@ body,
 html {
   height: 100%;
   margin: 0 auto;
-  font-size: 62.5%;
 }
 
 .site-header{
@@ -32,7 +31,6 @@ html {
 .gnav__menu__item a{
     color: #333;
     text-decoration: none;
-    font-size: 2.0rem;
 }
 
 /*--固定背景の設定--*/
@@ -55,7 +53,7 @@ html {
     text-align: center;
     padding:25%;
     opacity: 0.6;
-    font-size: 7.0rem;
+    font-size: 70px;
     color: #ffffff;
     font-family: 'Italianno', cursive;
 }
@@ -91,23 +89,17 @@ h2 {
 	background: linear-gradient(to right, rgba(156, 125, 112, 0.733), transparent);
 }
 
-.area p {
-    text-align: center;
-    font-size: 1.4rem;
-}
-
 .about {
     display: flex;
     overflow: hidden;
     margin-top: 10vh;
-    flex-wrap: wrap;
+    margin-bottom: 10vh;
 }
 
-
 .wrap img {
-    width: 350px;
-    height: 500px;
-    margin-left: 90px;
+    width: 300px;
+    height: 450px;
+    margin-left: 10vw;
     transform: scale(1.1);
     cursor: pointer;
     filter: grayscale(100%);
@@ -125,38 +117,29 @@ h2 {
     flex-direction: column;
 }
 
-.main-pro p {
-    font-size: 2.0rem;
-    line-height: 3.5rem;
-
+.profile p strong {
+    font-size: 20px;
+    line-height: 40px;
+    font-family: 'Karla', sans-serif;
 }
 
 h3 {
-    font-size: 4.0rem;
+    font-size: 40px;
     margin-top: 50px;
     margin-bottom: 30px;
     font-family: 'JetBrains Mono', monospace;
 }
 
 
+
 /* Skills */
-.skills {
-    margin-left: 20vw;
-}
-
-.skills i .fab {
-    width: 50px;
-    height: 65px;
-} 
-
-
 .skills img {
     width: 50px;
-    height: 65px;
+    height: 55px;
 }
 
 .my-orange{
-    color: rgb(224, 101, 18);
+    color: #e06512;
 }
 
 .my-blue1{ 
@@ -175,26 +158,23 @@ h3 {
     color: #6d88bc;
 }
 
-.cp_timeline04 img{
-    width: 250px;
-    height: 250px;
-    /* margin-left: 10px; */
-}
-
-
 /* intoriduction */
-
 .h-center {
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
+.cp_timeline04 img{
+    width: 250px;
+    height: 250px;
+    /* margin-left: 10px; */
+}
+
 .cp_timeline04 {
     position: relative;
     margin: 3em auto;
     padding-bottom: 2em;
-
 }
 
 .cp_timeline04:before {
@@ -207,13 +187,14 @@ h3 {
     background: #9a7169;
     border-radius: 50%;
 }
+
 .cp_timeline04 .timeline_item {
     margin: 0px 0px 0px 80px;
 }
 
 .cp_timeline04 .timeline_item .time_date .time {
     font-family: serif;
-    font-size: 6em;
+    font-size: 7em;
     font-weight: bold;
     position: relative;
     margin: 0;
@@ -246,8 +227,8 @@ h3 {
 .cp_timeline04 .timeline_item .desc {
     font-size: 1.0em;
     line-height: 20px;
-    margin-top: 10px;
     padding-left: 20px;
+    padding-top: 30px;
  }
 
 
@@ -386,25 +367,61 @@ footer {
         max-width: 750px;
     }
 
-    .site-header {
-        display: none;
-    }
-
-    .wrap img {
-
-    }
-
     .cd-fixed-bg p{
-        font-size: 3.1rem;
+        font-size: 30px;
     }
 
     .cp_timeline04:before {
     left: 15px;
     }
+
     .cp_timeline04 .timeline_item .time_date .time:before {
     left: -32px;
     }
+
     .cp_timeline04 .timeline_item {
     margin: 0px 0px 0px 40px;
     }
+
+    .cp_timeline04 .timeline_item .desc {
+    font-size: 14px;
+    }
+
+    .cp_h2title{
+        font-size: 30px;
+    }
+
+    .about {
+        display: block;
+    }
+
+    .wrap img {
+        width: 70%;
+        height: 80%;
+        margin-left: 15vw;
+        filter: grayscale(0%);
+    }
+
+    .works-list {
+        display: block;
+    }
+
+    h3{
+        font-size: 25px;
+    }
+
+    .profile p {
+        font-size: 12px;
+    }
+
+    .content img {
+        width: 70%;
+        height: 80%;
+        margin-bottom: 8vh;
+    }
+
+    footer {
+        margin-top: 3vh;
+    }
+
 }
