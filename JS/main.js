@@ -1,17 +1,11 @@
 $(function(){
-
-    $('ul li a').click(function() {
-        var imgSrc = $(this).children().attr('src');
-        $('.bigimg').children().attr('src', imgSrc);
-        $('.modal').fadeIn();
-        $('body,html').css('overflow-y', 'hidden');
-        return false
-      });
-
-    $('.close-btn').click(function() {
-        $('.modal').fadeOut();
-        $('body,html').css('overflow-y', 'visible');
-        return false
-      });
-
-});
+    $(".thumbnail").click(function() {
+    $('body').addClass('is-fixed');
+      $(".modal-inner").html($(this).prop('outerHTML'));
+      $(".modal").fadeIn();
+    });
+    $(".modal, .modal-inner").click(function() {
+        $(".modal").fadeOut();
+        $('body').removeClass('is-fixed');
+    });
+ });
