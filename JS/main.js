@@ -9,3 +9,5 @@ $(function(){
         $('body').removeClass('is-fixed');
     });
  });
+
+ $(window).fadeThis();

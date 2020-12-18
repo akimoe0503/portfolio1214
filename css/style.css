@@ -25,13 +25,31 @@ html {
 }
 
 .gnav__menu__item{
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 .gnav__menu__item a{
     color: #333;
     text-decoration: none;
 }
+
+.gnav__menu a {
+    display: inline-block;
+    transition: .3s;
+    font-size: 15px;
+    padding: 0 .3em;
+    background-image: linear-gradient(rgba(0, 0, 0, 0) 50%, rgb(128, 136, 131) 50%);
+    background-position: 0 0;
+    background-size: auto 200%;
+    transition: .3s;
+  }
+
+.gnav__menu a:hover {
+    background-position: 0 100%;
+    color: #fff;
+    transform: rotate(5deg);
+  }
+  
 
 /*--固定背景の設定--*/
 .cd-fixed-bg {
@@ -128,11 +146,31 @@ h3 {
     margin-top: 50px;
     margin-bottom: 30px;
     font-family: 'JetBrains Mono', monospace;
+    position: relative;
+    display: inline-block;
+    transition: .3s;
 }
+
+
+h3::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    width: 0;
+    height: 1px;
+    background-color: #d3935fea;
+    transition: .3s;
+  }
+
+  h3:hover::after {
+    width: 100%;
+  }
 
 
 
 /* Skills */
+
 .skills img {
     width: 50px;
     height: 55px;
