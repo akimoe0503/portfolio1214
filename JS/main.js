@@ -8,6 +8,9 @@ $(function(){
         $(".modal").fadeOut();
         $('body').removeClass('is-fixed');
     });
+
+
+    $(window).fadeThis();
  });
 
- $(window).fadeThis();
+
